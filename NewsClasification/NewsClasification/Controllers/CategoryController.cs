@@ -12,7 +12,6 @@ namespace NewsClasification.Controllers
 
         public IActionResult Category()
         {
-
             List<Category> cateModel = context.categories.ToList();
             //    List<Category> categories = new List<Category>();
             //  categories.Add(new Category(1, "test"));

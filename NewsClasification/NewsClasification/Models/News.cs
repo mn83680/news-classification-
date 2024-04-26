@@ -19,7 +19,7 @@ namespace NewsClasification.Models
         public int Category { get; set; }
 
         [ForeignKey("Publisher")]
-        public int pub { get; set; }
-        public Publisher publisher ;
+        public int pub_Id { get; set; }
+        public virtual Publisher Publisher { get; set; }
     }
 }

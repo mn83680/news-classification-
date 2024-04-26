@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\VS\\NewsClasification\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|d:\\vs\\newsclasification\\newsclasification\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|solutionrelative:newsclasification\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|d:\\vs\\newsclasification\\newsclasification\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|solutionrelative:newsclasification\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|d:\\vs\\newsclasification\\newsclasification\\models\\storenews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|solutionrelative:newsclasification\\models\\storenews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|d:\\vs\\newsclasification\\newsclasification\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|solutionrelative:newsclasification\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|d:\\vs\\newsclasification\\newsclasification\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +21,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|d:\\vs\\newsclasification\\newsclasification\\models\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|solutionrelative:newsclasification\\models\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|d:\\vs\\newsclasification\\newsclasification\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|solutionrelative:newsclasification\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|d:\\vs\\newsclasification\\newsclasification\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|solutionrelative:newsclasification\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|d:\\vs\\newsclasification\\newsclasification\\views\\category\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{34F1C2FD-19A9-4B23-9498-3636FE6E188E}|NewsClasification\\NewsClasification.csproj|solutionrelative:newsclasification\\views\\category\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,30 +42,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "D:\\VS\\NewsClasification\\NewsClasification\\Models\\Publisher.cs",
+              "RelativeDocumentMoniker": "NewsClasification\\Models\\Publisher.cs",
+              "ToolTip": "D:\\VS\\NewsClasification\\NewsClasification\\Models\\Publisher.cs",
+              "RelativeToolTip": "NewsClasification\\Models\\Publisher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T17:03:58.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\VS\\NewsClasification\\NewsClasification\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "NewsClasification\\Models\\Category.cs",
+              "ToolTip": "D:\\VS\\NewsClasification\\NewsClasification\\Models\\Category.cs",
+              "RelativeToolTip": "NewsClasification\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T06:15:25.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Category.cshtml",
+              "DocumentMoniker": "D:\\VS\\NewsClasification\\NewsClasification\\Views\\Category\\Category.cshtml",
+              "RelativeDocumentMoniker": "NewsClasification\\Views\\Category\\Category.cshtml",
+              "ToolTip": "D:\\VS\\NewsClasification\\NewsClasification\\Views\\Category\\Category.cshtml",
+              "RelativeToolTip": "NewsClasification\\Views\\Category\\Category.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T14:15:10.542Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "D:\\VS\\NewsClasification\\NewsClasification\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "NewsClasification\\Controllers\\NewsController.cs",
+              "ToolTip": "D:\\VS\\NewsClasification\\NewsClasification\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "NewsClasification\\Controllers\\NewsController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAUwCgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T06:13:58.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\VS\\NewsClasification\\NewsClasification\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "NewsClasification\\Controllers\\CategoryController.cs",
               "ToolTip": "D:\\VS\\NewsClasification\\NewsClasification\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "NewsClasification\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAADwvxwAAAAQAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T14:09:53.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "News.cs",
               "DocumentMoniker": "D:\\VS\\NewsClasification\\NewsClasification\\Models\\News.cs",
               "RelativeDocumentMoniker": "NewsClasification\\Models\\News.cs",
               "ToolTip": "D:\\VS\\NewsClasification\\NewsClasification\\Models\\News.cs",
               "RelativeToolTip": "NewsClasification\\Models\\News.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABYAAAAkAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T14:07:05.159Z",
               "EditorCaption": ""
@@ -62,20 +129,20 @@
               "RelativeDocumentMoniker": "NewsClasification\\Models\\StoreNews.cs",
               "ToolTip": "D:\\VS\\NewsClasification\\NewsClasification\\Models\\StoreNews.cs",
               "RelativeToolTip": "NewsClasification\\Models\\StoreNews.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T14:06:14.317Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Entity.cs",
               "DocumentMoniker": "D:\\VS\\NewsClasification\\NewsClasification\\Models\\Entity.cs",
               "RelativeDocumentMoniker": "NewsClasification\\Models\\Entity.cs",
               "ToolTip": "D:\\VS\\NewsClasification\\NewsClasification\\Models\\Entity.cs",
               "RelativeToolTip": "NewsClasification\\Models\\Entity.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T14:05:19.848Z",
               "EditorCaption": ""
