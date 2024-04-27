@@ -390,3 +390,8 @@ D:\VS\NewsClasification\NewsClasification\obj\Debug\net5.0\NewsClasification.pdb
 D:\VS\NewsClasification\NewsClasification\obj\Debug\net5.0\NewsClasification.genruntimeconfig.cache
 D:\VS\NewsClasification\NewsClasification\obj\Debug\net5.0\ref\NewsClasification.dll
 D:\VS\NewsClasification\NewsClasification\obj\Debug\net5.0\Razor\Views\Category\Category.cshtml.g.cs
+D:\VS\NewsClasification\NewsClasification\obj\Debug\net5.0\Razor\Views\News\News.cshtml.g.cs
+D:\VS\NewsClasification\NewsClasification\obj\Debug\net5.0\Razor\Views\Category\Sport.cshtml.g.cs
+D:\VS\NewsClasification\NewsClasification\obj\Debug\net5.0\Razor\Views\Category\Political.cshtml.g.cs
+D:\VS\NewsClasification\NewsClasification\obj\Debug\net5.0\Razor\Views\Category\Economic.cshtml.g.cs
+D:\VS\NewsClasification\NewsClasification\obj\Debug\net5.0\Razor\Views\Category\Technology.cshtml.g.cs

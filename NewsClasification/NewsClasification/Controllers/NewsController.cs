@@ -18,6 +18,7 @@ namespace NewsClasification.Controllers
 
             return View(cateModel);
         }
+       
         /*
          * 
           public List<News> newsCache;

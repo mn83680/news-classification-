@@ -11,6 +11,7 @@ namespace NewsClasification.Controllers
 {
     public class HomeController : Controller
     {
+        Entity context = new Entity();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -20,6 +21,7 @@ namespace NewsClasification.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
 

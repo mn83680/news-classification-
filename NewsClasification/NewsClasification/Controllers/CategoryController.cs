@@ -19,7 +19,53 @@ namespace NewsClasification.Controllers
 
             return View(cateModel);
         }
+        public IActionResult Sport()
+        {
+            List<News> cateModel = context.news.ToList();
+            //    List<Category> categories = new List<Category>();
+            //  categories.Add(new Category(1, "test"));
+            //Console.WriteLine(categories.Count);
 
+            return View(cateModel);
+        }
+        public IActionResult Political()
+        {
+            List<News> cateModel = context.news.ToList();
+            //    List<Category> categories = new List<Category>();
+            //  categories.Add(new Category(1, "test"));
+            //Console.WriteLine(categories.Count);
+
+            return View(cateModel);
+        }
+        public IActionResult Economic()
+        {
+            List<News> cateModel = context.news.ToList();
+            //    List<Category> categories = new List<Category>();
+            //  categories.Add(new Category(1, "test"));
+            //Console.WriteLine(categories.Count);
+
+            return View(cateModel);
+        }
+        public IActionResult Technology()
+        {
+            List<News> cateModel = context.news.ToList();
+            //    List<Category> categories = new List<Category>();
+            //  categories.Add(new Category(1, "test"));
+            //Console.WriteLine(categories.Count);
+
+            return View(cateModel);
+        }
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         /*
         public IActionResult ShowNewsId(int Id)
         {

@@ -14,9 +14,13 @@ namespace NewsClasification.Models
 
         public string Content { get; set; }
 
+        public string image {  get; set; }
+
         public DateTime PublishDate { get; set; }
 
-        public int Category { get; set; }
+        [ForeignKey("Category")]
+        public int Category_Id { get; set; }
+        public virtual Category Category { get; set; }
 
         [ForeignKey("Publisher")]
         public int pub_Id { get; set; }
