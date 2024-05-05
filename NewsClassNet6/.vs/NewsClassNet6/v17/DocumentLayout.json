@@ -1,38 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\VS\\NewsClassNet6\\",
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|d:\\vs\\newsclassnet6\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|c:\\users\\asus\\desktop\\newsclassnet6\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|c:\\users\\asus\\desktop\\newsclassnet6\\views\\news\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:views\\news\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|c:\\users\\asus\\desktop\\newsclassnet6\\views\\news\\newsadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:views\\news\\newsadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|c:\\users\\asus\\desktop\\newsclassnet6\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|d:\\vs\\newsclassnet6\\views\\account\\addpublisher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:views\\account\\addpublisher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|d:\\vs\\newsclassnet6\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|d:\\vs\\newsclassnet6\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|d:\\vs\\newsclassnet6\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|d:\\vs\\newsclassnet6\\views\\account\\addadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:views\\account\\addadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|d:\\vs\\newsclassnet6\\views\\roles\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:views\\roles\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|d:\\vs\\newsclassnet6\\viewmodels\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F149AD3-59A9-43FA-96C7-B015A85075D3}|NewsClassNet6.csproj|solutionrelative:viewmodels\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddPublisher.cshtml",
-              "DocumentMoniker": "D:\\VS\\NewsClassNet6\\Views\\Account\\AddPublisher.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\AddPublisher.cshtml",
-              "ToolTip": "D:\\VS\\NewsClassNet6\\Views\\Account\\AddPublisher.cshtml",
-              "RelativeToolTip": "Views\\Account\\AddPublisher.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACMAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T20:30:49.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\VS\\NewsClassNet6\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\VS\\NewsClassNet6\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAwAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T20:03:19.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddAdmin.cshtml",
-              "DocumentMoniker": "D:\\VS\\NewsClassNet6\\Views\\Account\\AddAdmin.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\AddAdmin.cshtml",
-              "ToolTip": "D:\\VS\\NewsClassNet6\\Views\\Account\\AddAdmin.cshtml",
-              "RelativeToolTip": "Views\\Account\\AddAdmin.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAA0AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T17:52:04.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T15:46:58.934Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\VS\\NewsClassNet6\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\VS\\NewsClassNet6\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T17:15:46.113Z",
+              "Title": "NewsAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\Views\\News\\NewsAdmin.cshtml",
+              "RelativeDocumentMoniker": "Views\\News\\NewsAdmin.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\Views\\News\\NewsAdmin.cshtml",
+              "RelativeToolTip": "Views\\News\\NewsAdmin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-05T15:25:22.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\VS\\NewsClassNet6\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\VS\\NewsClassNet6\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADIAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T16:40:18.058Z",
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NewsController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "Controllers\\NewsController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAEsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T15:05:12.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "New.cshtml",
-              "DocumentMoniker": "D:\\VS\\NewsClassNet6\\Views\\Roles\\New.cshtml",
-              "RelativeDocumentMoniker": "Views\\Roles\\New.cshtml",
-              "ToolTip": "D:\\VS\\NewsClassNet6\\Views\\Roles\\New.cshtml",
-              "RelativeToolTip": "Views\\Roles\\New.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\Views\\News\\New.cshtml",
+              "RelativeDocumentMoniker": "Views\\News\\New.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\Views\\News\\New.cshtml",
+              "RelativeToolTip": "Views\\News\\New.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T16:33:30.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RoleViewModel.cs",
-              "DocumentMoniker": "D:\\VS\\NewsClassNet6\\ViewModels\\RoleViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RoleViewModel.cs",
-              "ToolTip": "D:\\VS\\NewsClassNet6\\ViewModels\\RoleViewModel.cs",
-              "RelativeToolTip": "ViewModels\\RoleViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T15:56:17.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "D:\\VS\\NewsClassNet6\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
-              "ToolTip": "D:\\VS\\NewsClassNet6\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "Controllers\\RolesController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T15:23:31.522Z",
+              "WhenOpened": "2024-05-05T14:00:43.047Z",
               "EditorCaption": ""
             }
           ]

@@ -21,7 +21,6 @@ namespace NewsClassNet6.Models
         [ForeignKey("Category")]
         public int Category_Id { get; set; }
         public virtual Category Category { get; set; }
-
         [ForeignKey("Publisher")]
         public int pub_Id { get; set; }
         public virtual Publisher Publisher { get; set; }
