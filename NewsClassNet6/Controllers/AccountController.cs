@@ -4,6 +4,7 @@ using System.Security.Claims;
 using NewsClassNet6.Models;
 using NewsClassNet6.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using DocumentFormat.OpenXml.InkML;
 
 namespace NewsClassNet6.Controllers
 {
@@ -20,15 +21,15 @@ namespace NewsClassNet6.Controllers
             signInMAnager = _SignInMAnager;
         }
 
-//..................................................................................Admin........................
-        //Only the Admin sees these
-        [Authorize(Roles = "Admin")]
+        //..................................................................................Admin........................
+        //Only the Admin sees these (Roles = "Admin")
+        [Authorize]
         [HttpGet]
         public IActionResult AddAdmin()
         {
             return View();
         }
-        [Authorize(Roles = "Admin")]
+        [Authorize]//(Roles = "Admin")
         [HttpPost]
         public async Task <IActionResult> AddAdmin(RegisterUserViewModel newUserVM)
         {
@@ -47,7 +48,7 @@ namespace NewsClassNet6.Controllers
                     await userManager.AddToRoleAsync(userModel, "Admin");
                     //creat cookie
                     await signInMAnager.SignInAsync(userModel, false);
-                    return RedirectToAction("Index", "User");
+                    return RedirectToAction("News", "News");
                 }
                 else
                 {
@@ -87,7 +88,7 @@ namespace NewsClassNet6.Controllers
                     await userManager.AddToRoleAsync(userModel, "Publisher");
                     //creat cookie
                     await signInMAnager.SignInAsync(userModel, false);
-                    return RedirectToAction("Index", "User");
+                    return RedirectToAction("News", "News");
                 }
                 else
                 {
@@ -155,7 +156,7 @@ namespace NewsClassNet6.Controllers
                 {
                     //creat cookie
                     await signInMAnager.SignInAsync(userModel, false);
-                    return RedirectToAction("Index", "News");
+                    return RedirectToAction("News", "News");
                 }
                 else
                 {
@@ -171,7 +172,13 @@ namespace NewsClassNet6.Controllers
         public async Task<IActionResult> Logout()
         {
             await signInMAnager.SignOutAsync();
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction("Login" , "Account");
         }
+
+
+        //..............................................................................................................
+       
+
     }
+
 }

@@ -17,13 +17,10 @@ namespace NewsClassNet6.Models
 
             public DbSet<News> news { get; set; }
            
-            public DbSet<Publisher> publishers { get; set; }
            
-            public DbSet<User> users { get; set; }
-
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            {
-                optionsBuilder.UseSqlServer("Data Source=. ; Initial Catalog=NewsSPU ; Integrated Security=True;Encrypt=True ; Trust Server Certificate=True");
+        {                                               
+            optionsBuilder.UseSqlServer("Data Source=. ; Initial Catalog=NewsSPU1 ; Integrated Security=True;Encrypt=True ; Trust Server Certificate=True");
                 base.OnConfiguring(optionsBuilder);
             }
             // add-migration init

@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NewsClassNet6.Models;
-using NewsClassNet6.Repository;
 using System.Security.Principal;
 
 namespace NewsClassNet6
@@ -29,9 +28,9 @@ namespace NewsClassNet6
                 ).
                 AddEntityFrameworkStores<Entity>();
 
-            //Custom Service --REgister
-            builder.Services.AddScoped<IUserRepository, UserRepository>();
-            builder.Services.AddScoped<INewsRepository, NewsRepository>();
+             //Custom Service --REgister
+            // builder.Services.AddScoped<IUserRepository, UserRepository>();
+           // builder.Services.AddScoped<INewsRepository, NewsRepository>();
 
             var app = builder.Build();
 

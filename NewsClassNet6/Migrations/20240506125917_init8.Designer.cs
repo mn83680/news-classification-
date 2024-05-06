@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NewsClassNet6.Models;
 
@@ -11,9 +12,10 @@ using NewsClassNet6.Models;
 namespace NewsClassNet6.Migrations
 {
     [DbContext(typeof(Entity))]
-    partial class EntityModelSnapshot : ModelSnapshot
+    [Migration("20240506125917_init8")]
+    partial class init8
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -260,8 +262,11 @@ namespace NewsClassNet6.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("PublisherId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Publisher_Id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -341,9 +346,7 @@ namespace NewsClassNet6.Migrations
 
                     b.HasOne("NewsClassNet6.Models.ApplicationUser", "Publisher")
                         .WithMany()
-                        .HasForeignKey("PublisherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PublisherId");
 
                     b.Navigation("Category");
 

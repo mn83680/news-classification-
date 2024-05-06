@@ -38,30 +38,32 @@
                                 }
                                 else
                                 {
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout...   </a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout... </a>
+                                    
                                     @if (User.IsInRole("Admin"))
                                     {
-                                        
-                                   
-                                    <a class="nav-link text-dark" asp-controller="roles" asp-action="New">AddRoles</a>
-                                    
-                                    <a class="nav-link text-dark" asp-controller="Account" asp-action="AddAdmin">AddAdmin</a>
 
-                                    <a class="nav-link text-dark" asp-controller="Account" asp-action="AddPublisher">AddPublisher</a>
-                                   
-                                    <a class="nav-link text-dark" asp-controller="Category" asp-action="new">NewCategory</a>
+                                        <a class="nav-link text-dark" asp-controller="roles" asp-action="New">AddRoles</a>
 
-                                    <a class="nav-link text-dark" asp-controller="News" asp-action="NewsAdmin">News Control</a>
-                                    
-                                    <a class="nav-link text-dark" asp-controller="News" asp-action="New">AddNews</a>
+                                        <a class="nav-link text-dark" asp-controller="Account" asp-action="AddAdmin">AddAdmin</a>
 
-                                    
-                                     
-                                    
+                                        <a class="nav-link text-dark" asp-controller="Account" asp-action="AddPublisher">AddPublisher</a>
+
+                                        <a class="nav-link text-dark" asp-controller="Category" asp-action="new">NewCategory</a>
+
                                     }
+                                    @if (User.IsInRole("Admin") || User.IsInRole("Publisher"))
+                                        {
+
+                                        <a class="nav-link text-dark " asp-area="" asp-controller="Category" asp-action="Index">Categories</a>
+                                    
+                                        <a class="nav-link text-dark" asp-controller="News" asp-action="NewsAdmin">NewsControl</a>
+                                   
+                                        <a class="nav-link text-dark" asp-controller="News" asp-action="New">AddNews</a>
+
+                                    
+                                        }    
                                 }
-                                
-                               
                             </div>
                         </li>
                         <li class="nav-item active">
@@ -76,16 +78,13 @@
                         <li class="nav-item active">
                             <a class="nav-link " asp-area="" asp-controller="Category" asp-action="Technology">Technology</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link " asp-area="" asp-controller="Category" asp-action="Index">Category</a>
-                        </li>
+                        
                        
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
+                    <form class="form-inline my-2 my-lg-0" action="News/SearchResult">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
- 
                 </div>
             </div>
         </nav>

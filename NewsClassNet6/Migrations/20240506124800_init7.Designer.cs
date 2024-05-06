@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NewsClassNet6.Models;
 
@@ -11,9 +12,10 @@ using NewsClassNet6.Models;
 namespace NewsClassNet6.Migrations
 {
     [DbContext(typeof(Entity))]
-    partial class EntityModelSnapshot : ModelSnapshot
+    [Migration("20240506124800_init7")]
+    partial class init7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -259,10 +261,6 @@ namespace NewsClassNet6.Migrations
                     b.Property<DateTime>("PublishDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("PublisherId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -274,8 +272,6 @@ namespace NewsClassNet6.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("Category_Id");
-
-                    b.HasIndex("PublisherId");
 
                     b.ToTable("news");
                 });
@@ -339,15 +335,7 @@ namespace NewsClassNet6.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("NewsClassNet6.Models.ApplicationUser", "Publisher")
-                        .WithMany()
-                        .HasForeignKey("PublisherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Category");
-
-                    b.Navigation("Publisher");
                 });
 #pragma warning restore 612, 618
         }

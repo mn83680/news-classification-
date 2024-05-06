@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using DocumentFormat.OpenXml.Office2010.Excel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NewsClassNet6.Models;
@@ -11,11 +12,36 @@ namespace NewsClassNet6.Controllers
     [Authorize]
     public class NewsController : Controller
     {
-        Entity context = new Entity();
+        private readonly Entity context;
+        private readonly ILogger<NewsController> _logger;
+        private readonly UserManager<ApplicationUser> userManager;
+        public NewsController(UserManager<ApplicationUser> userManager, Entity context, ILogger<NewsController> logger)
+        {
+            this.userManager = userManager;
+            this.context = context;  // Corrected the parameter name and assignment
+            this._logger = logger;
+        }
 
-        //............................................................Edit.........................
+        //............................................................Search.........................
+        public IActionResult SearchResult(string searchTerm)
+        {
+            // البحث عن الخبر الذي يحتوي على مصطلح البحث في عنوانه
+            List<News>? newsItem = context.news.Where(n => n.Title.Contains(searchTerm)).ToList();
+
+            if (newsItem == null)
+            {
+                // إظهار رسالة مفادها عدم وجود نتائج
+                return View("NoResults");
+            }
+
+            // إعادة الخبر الذي تم العثور عليه
+            return View(newsItem);
+        }
 
 
+
+        //............................................................Edit...........................
+        [Authorize]
         //open page
         public IActionResult Edit(int id)
         {
@@ -24,8 +50,7 @@ namespace NewsClassNet6.Controllers
             return View(nes);
         }
         //Save
-        [HttpPost] //not used URL => News/SaveEdit/1?Title=...&Contint=... => Just By Form
-        //Defult [HttpGet]
+        [HttpPost] //not used URL => News/SaveEdit/1?Title=...&Contint=... => Just By Form //Defult [HttpGet]
         public IActionResult SaveEdit(int id , News newnews) //call form
         {
       
@@ -39,12 +64,12 @@ namespace NewsClassNet6.Controllers
                 nes.Category_Id = newnews.Category_Id;
             }
             context.SaveChanges(); //action   ,  controller ,  Details of news
-           return RedirectToAction("NewsAdmin" , "News");
+            return RedirectToAction("NewsAdmin" , "News");
            //return RedirectToAction("Details" , "Category" , new {id=nes.Category_Id});
         }
 
         //............................................View..................................................... 
-      
+        [Authorize]
         public IActionResult News()
         {
             
@@ -53,7 +78,8 @@ namespace NewsClassNet6.Controllers
 
             return View(cateModel);
         }
-        [Authorize(Roles = "Admin")]
+
+        [Authorize(Roles = "Admin , Publisher")]
         public IActionResult NewsAdmin()
         {
             List<News> cateModel = context.news.ToList();
@@ -66,21 +92,43 @@ namespace NewsClassNet6.Controllers
 
         public IActionResult New()
         {
-           
+            //  ابعت عالتلغرام شو عم نعمل هون
+            if (context == null)
+            {
+                // Handle the case where context is null (e.g., log an error)
+                return StatusCode(500, "Internal Server Error");
+            }
+            ViewData["DeptList"] = context.news.ToList();
 
-            return View();
-        }
-        [HttpPost]
-        public IActionResult New(News newS)
-        {
             ViewBag.cats = context.categories.ToList<Category>();
-            //save
-            context.news.Add(newS);
-                context.SaveChanges();
-                return RedirectToAction("News");
-            
-            
+
+            return View(new News());
         }
+        //save
+        [Authorize]
+        [HttpPost]
+        public IActionResult New(News model)
+        {
+           // _logger.LogInformation("Creating a new news item.");
+
+            model.PublishDate = DateTime.Now;
+            model.PublisherId = userManager.GetUserId(User);
+          // _logger.LogWarning(model.ToString());
+           /* if (!ModelState.IsValid)
+            {
+
+                _logger.LogWarning("Model state is invalid.");
+                _logger.LogWarning(model.Category_Id.ToString());
+                ViewBag.cats = context.categories.ToList<Category>();  // Populate categories for dropdown
+                return View(model);  // Return the view with the model to show validation errors
+            }*/
+         //   _logger.LogInformation("All Good");
+            // Make sure UserManager is injected and configured
+            context.news.Add(model);
+            context.SaveChanges();
+            return RedirectToAction("News");
+        }
+
 
         //...................................Delete...................................................
 

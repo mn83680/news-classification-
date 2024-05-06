@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace NewsClassNet6.Migrations
 {
-    public partial class init1 : Migration
+    public partial class init7 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -60,36 +60,6 @@ namespace NewsClassNet6.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_categories", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "publishers",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_publishers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "users",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -208,8 +178,7 @@ namespace NewsClassNet6.Migrations
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     image = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PublishDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Category_Id = table.Column<int>(type: "int", nullable: false),
-                    pub_Id = table.Column<int>(type: "int", nullable: false)
+                    Category_Id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -218,12 +187,6 @@ namespace NewsClassNet6.Migrations
                         name: "FK_news_categories_Category_Id",
                         column: x => x.Category_Id,
                         principalTable: "categories",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_news_publishers_pub_Id",
-                        column: x => x.pub_Id,
-                        principalTable: "publishers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -271,11 +234,6 @@ namespace NewsClassNet6.Migrations
                 name: "IX_news_Category_Id",
                 table: "news",
                 column: "Category_Id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_news_pub_Id",
-                table: "news",
-                column: "pub_Id");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -299,9 +257,6 @@ namespace NewsClassNet6.Migrations
                 name: "news");
 
             migrationBuilder.DropTable(
-                name: "users");
-
-            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
@@ -309,9 +264,6 @@ namespace NewsClassNet6.Migrations
 
             migrationBuilder.DropTable(
                 name: "categories");
-
-            migrationBuilder.DropTable(
-                name: "publishers");
         }
     }
 }

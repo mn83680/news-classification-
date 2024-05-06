@@ -7,8 +7,8 @@ using NewsClassNet6.ViewModels;
 
 namespace NewsClassNet6.Controllers
 {
-    //Only the Admin sees these
-    [Authorize(Roles = "Admin")]
+    //Only the Admin sees these (Roles = "Admin")
+    [Authorize]
     public class RolesController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;

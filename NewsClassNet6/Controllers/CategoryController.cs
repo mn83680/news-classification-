@@ -51,8 +51,18 @@ namespace NewsClassNet6.Controllers
             Category cat = context.categories.FirstOrDefault(d => d.Id == id);
             return View("Details", cat);
         }
-        //......................................................................................................5..........
-        
+
+        public IActionResult Delete(int id)
+        {
+            Category? cat = context.categories.FirstOrDefault(s => s.Id == id);
+            context.categories.Remove(cat);
+            context.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
+        //......................................................................................................Categories..........
+
 
         public IActionResult Category()
         {
