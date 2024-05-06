@@ -61,6 +61,7 @@ namespace NewsClassNet6.Controllers
             { 
                 nes.Title = newnews.Title;
                 nes.Content = newnews.Content;
+                //nes.image = newnews.image;
                 nes.Category_Id = newnews.Category_Id;
             }
             context.SaveChanges(); //action   ,  controller ,  Details of news
