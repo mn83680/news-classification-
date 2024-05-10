@@ -9,11 +9,10 @@ namespace NewsClassNet6.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
         public string Title { get; set; }
         public string Content { get; set; }
         public string image { get; set; }
-            public DateTime PublishDate { get; set; }
+        public DateTime PublishDate { get; set; }
 
         [ForeignKey("Category")]
         public int Category_Id { get; set; }  // Clear foreign key indication

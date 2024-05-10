@@ -21,8 +21,11 @@ namespace NewsClassNet6.Controllers
             this.context = context;  // Corrected the parameter name and assignment
             this._logger = logger;
         }
+        //............................................................UploadImage...........................
 
-        //............................................................Search.........................
+
+
+        //............................................................Search................................
         public IActionResult SearchResult(string searchTerm)
         {
             // البحث عن الخبر الذي يحتوي على مصطلح البحث في عنوانه
@@ -41,7 +44,7 @@ namespace NewsClassNet6.Controllers
 
 
         //............................................................Edit...........................
-        [Authorize]
+        [Authorize(Roles = "Admin , Publisher")]
         //open page
         public IActionResult Edit(int id)
         {
@@ -61,7 +64,7 @@ namespace NewsClassNet6.Controllers
             { 
                 nes.Title = newnews.Title;
                 nes.Content = newnews.Content;
-                //nes.image = newnews.image;
+               // nes.image = newnews.image;
                 nes.Category_Id = newnews.Category_Id;
             }
             context.SaveChanges(); //action   ,  controller ,  Details of news
@@ -90,10 +93,10 @@ namespace NewsClassNet6.Controllers
         }
 
         //................................add...............................................
-
+        [Authorize(Roles = "Admin , Publisher")]
         public IActionResult New()
         {
-            //  ابعت عالتلغرام شو عم نعمل هون
+           
             if (context == null)
             {
                 // Handle the case where context is null (e.g., log an error)
@@ -114,31 +117,22 @@ namespace NewsClassNet6.Controllers
 
             model.PublishDate = DateTime.Now;
             model.PublisherId = userManager.GetUserId(User);
-          // _logger.LogWarning(model.ToString());
-           /* if (!ModelState.IsValid)
-            {
-
-                _logger.LogWarning("Model state is invalid.");
-                _logger.LogWarning(model.Category_Id.ToString());
-                ViewBag.cats = context.categories.ToList<Category>();  // Populate categories for dropdown
-                return View(model);  // Return the view with the model to show validation errors
-            }*/
-         //   _logger.LogInformation("All Good");
-            // Make sure UserManager is injected and configured
-            context.news.Add(model);
-            context.SaveChanges();
-            return RedirectToAction("News");
+            
+                context.news.Add(model);
+                context.SaveChanges();
+                return RedirectToAction("News");
+            
         }
 
 
         //...................................Delete...................................................
-
+        [Authorize(Roles = "Admin , Publisher")]
         public IActionResult Delete(int id)
         {
             News? ne = context.news.FirstOrDefault(s => s.Id == id);
             context.news.Remove(ne);
             context.SaveChanges();
-            return RedirectToAction("News");
+            return RedirectToAction("NewsAdmin");
 
         }
 

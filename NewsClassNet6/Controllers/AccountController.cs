@@ -23,7 +23,7 @@ namespace NewsClassNet6.Controllers
 
         //..................................................................................Admin........................
         //Only the Admin sees these (Roles = "Admin")
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult AddAdmin()
         {
@@ -101,7 +101,7 @@ namespace NewsClassNet6.Controllers
             }
             return View(newUserVM);
         }
-        //...........................................................................lpgin.......................
+        //...........................................................................login.......................
         [HttpGet]
         public IActionResult Login()
         {

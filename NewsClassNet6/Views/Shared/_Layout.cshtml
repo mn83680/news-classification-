@@ -37,36 +37,31 @@
                                     <a class="nav-link text-dark " asp-area="" asp-controller="Account" asp-action="Register">Register</a>
                                 }
                                 else
-                                {
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout... </a>
-                                    
+                                { 
                                     @if (User.IsInRole("Admin"))
                                     {
-
-                                        <a class="nav-link text-dark" asp-controller="roles" asp-action="New">AddRoles</a>
-
                                         <a class="nav-link text-dark" asp-controller="Account" asp-action="AddAdmin">AddAdmin</a>
 
                                         <a class="nav-link text-dark" asp-controller="Account" asp-action="AddPublisher">AddPublisher</a>
 
-                                        <a class="nav-link text-dark" asp-controller="Category" asp-action="new">NewCategory</a>
+                                        <a class="nav-link text-dark" asp-controller="roles" asp-action="New">AddRoles</a>
 
+                                        @*  <a class="nav-link text-dark" asp-controller="Category" asp-action="new">NewCategory</a> *@
+
+                                        <a class="nav-link text-dark " asp-area="" asp-controller="Category" asp-action="Index">CategoryControl</a>
                                     }
                                     @if (User.IsInRole("Admin") || User.IsInRole("Publisher"))
                                         {
-
-                                        <a class="nav-link text-dark " asp-area="" asp-controller="Category" asp-action="Index">Categories</a>
+                                        <a class="nav-link text-dark" asp-controller="Services" asp-action="uploadImage">UploadImage</a>
                                     
                                         <a class="nav-link text-dark" asp-controller="News" asp-action="NewsAdmin">NewsControl</a>
                                    
                                         <a class="nav-link text-dark" asp-controller="News" asp-action="New">AddNews</a>
 
-                                        <a class="nav-link text-dark" asp-controller="Services" asp-action="uploadImage">UploadImage</a>
+                                       
 
-
-
-                                    
-                                        }    
+                                        }
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout... </a>
                                 }
                             </div>
                         </li>

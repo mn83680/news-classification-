@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Demo.Controllers
+namespace NewsClassNet6.Controllers
 {
     public class ServicesController : Controller
     {
@@ -19,8 +19,8 @@ namespace Demo.Controllers
         {
             if (Image == null || Image.Length == 0)
             {
-                 
-                return View();
+
+                return RedirectToAction("New", "News");
             }
 
             string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "Images");
@@ -33,9 +33,9 @@ namespace Demo.Controllers
                 fileStream.Close();
             }
 
-            
-            return View(); // أو إعادة عرض نفس الصفحة
-        }
 
+            return RedirectToAction("New", "News");
+        }
+        
     }
 }

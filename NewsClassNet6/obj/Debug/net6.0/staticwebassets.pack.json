@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\100X125.gif"
     },
     {
+      "Id": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\wwwroot\\images\\122.png",
+      "PackagePath": "staticwebassets\\images\\122.png"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\wwwroot\\images\\1920x500.gif",
       "PackagePath": "staticwebassets\\images\\1920x500.gif"
     },
@@ -57,6 +61,10 @@
       "PackagePath": "staticwebassets\\images\\511.webp"
     },
     {
+      "Id": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\wwwroot\\images\\5555.png",
+      "PackagePath": "staticwebassets\\images\\5555.png"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\wwwroot\\images\\AM.webp",
       "PackagePath": "staticwebassets\\images\\AM.webp"
     },
@@ -81,8 +89,20 @@
       "PackagePath": "staticwebassets\\images\\haland.jpg"
     },
     {
+      "Id": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\wwwroot\\images\\images.png",
+      "PackagePath": "staticwebassets\\images\\images.png"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\wwwroot\\images\\ocrania.webp",
       "PackagePath": "staticwebassets\\images\\ocrania.webp"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\wwwroot\\images\\p22.jpg",
+      "PackagePath": "staticwebassets\\images\\p22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\wwwroot\\images\\real2.jpg",
+      "PackagePath": "staticwebassets\\images\\real2.jpg"
     },
     {
       "Id": "C:\\Users\\ASUS\\Desktop\\NewsClassNet6\\wwwroot\\images\\salah.jpg",

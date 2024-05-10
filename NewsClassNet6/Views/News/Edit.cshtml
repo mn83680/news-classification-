@@ -3,8 +3,10 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
 <h2>@Model.Title</h2>
+
+<hr />
+
 <form action="/News/SaveEdit/@Model.Id" method="post">
         <div class="form-group">
             <label for="Title">Title</label>
